@@ -218,69 +218,54 @@ p {
     gap: 1rem;
 }
 
-/* Code Window */
-.code-window {
-    background: #1a202c;
-    border-radius: 12px;
+/* Hero Image */
+.hero-image {
+    position: relative;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.1);
 }
 
-.code-header {
-    background: #2d3748;
-    padding: 1rem;
+.profile-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover .profile-image {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.achievement-badge {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.code-dots {
-    display: flex;
     gap: 0.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
-.code-dots span {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.code-dots span:nth-child(1) { background: #ff5f56; }
-.code-dots span:nth-child(2) { background: #ffbd2e; }
-.code-dots span:nth-child(3) { background: #27ca3f; }
-
-.code-title {
-    color: #a0aec0;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-}
-
-.code-content {
-    padding: 1.5rem;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    overflow-x: auto;
-}
-
-.code-content .keyword { color: #c792ea; }
-.code-content .module { color: #82aaff; }
-.code-content .function { color: #ffcb6b; }
-.code-content .string { color: #c3e88d; }
-.code-content .comment { color: #546e7a; }
-
-/* Ensure spans are displayed inline */
-.code-content span {
-    display: inline;
-}
-
-/* Fix code formatting */
-.code-content code {
-    color: #e6e6e6;
-    background: none;
-    padding: 0;
-    border: none;
+.achievement-badge i {
+    color: #ffd700;
+    font-size: 1.3rem;
 }
 
 /* Scroll Indicator */
