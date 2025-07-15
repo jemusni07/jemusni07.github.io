@@ -1,219 +1,830 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>All Things Data With Jonathan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Musni - Data Engineer & Analytics Expert</title>
+    <meta name="description" content="Senior Data Engineer specializing in scalable data solutions, cloud architecture, and performance optimization. 5+ years of experience with AWS, Azure, and modern data stack.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">JM</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Jonathan Musni</h1>
+                    <h2 class="hero-title">Senior Data Engineer & Analytics Expert</h2>
+                    <p class="hero-description">
+                        I build scalable data solutions that drive business impact. Specialized in cloud architectures, 
+                        performance optimization, and turning complex data challenges into strategic advantages.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">63%</span>
+                            <span class="stat-label">Cost Reduction</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">96%</span>
+                            <span class="stat-label">Performance Boost</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">data_pipeline.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">from</span> <span class="module">pyspark.sql</span> <span class="keyword">import</span> SparkSession
+<span class="keyword">import</span> <span class="module">boto3</span>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>All Things Data with Jonathan<br />
-						</h1>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<span class="keyword">def</span> <span class="function">optimize_pipeline</span>():
+    <span class="comment"># 96% latency improvement</span>
+    spark = SparkSession.builder \\
+        .appName(<span class="string">"DataOptimization"</span>) \\
+        .config(<span class="string">"spark.sql.adaptive.enabled"</span>, <span class="string">"true"</span>) \\
+        .getOrCreate()
+    
+    <span class="comment"># 63% cost reduction achieved</span>
+    <span class="keyword">return</span> spark.read.format(<span class="string">"iceberg"</span>) \\
+        .option(<span class="string">"path"</span>, s3_path) \\
+        .load()</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-				<!-- Header -->
-					<!-- <header id="header">
-						<a href="index.html" class="logo">Data Portfolio</a>
-					</header> -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">From healthcare tech to data engineering excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-story">
+                        <h3>My Journey</h3>
+                        <p>
+                            My path to data engineering began in an unexpected place - the operating rooms of St. Luke's Medical Center in the Philippines. 
+                            As a Biomedical Equipment Technician, I learned the critical importance of precision and reliability when technology directly impacts lives.
+                        </p>
+                        <p>
+                            This foundation led me through operations support at Sky Cable Corporation, where I optimized network performance while 
+                            self-studying data science. DXC Technology sponsored my Master's in Data Science at Drexel University, opening doors to 
+                            the fascinating world of AI and machine learning.
+                        </p>
+                        <p>
+                            Today, as a Senior Data Engineer at DXC Technology Platform X, I focus on building robust, scalable data solutions that 
+                            drive real business value while maintaining the precision and attention to detail that started my journey.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>MS Data Science (Drexel, 3.92 GPA)<br>Currently: MS Information Systems</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Philadelphia, PA<br>Originally from Philippines</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-running"></i>
+                            <div>
+                                <h4>Beyond Code</h4>
+                                <p>Distance runner, tech writer<br>Philadelphia tech community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects & Articles</a></li>
-							<!-- <li><a href="generic.html">Articles</a></li> -->
-							<li><a href="about_me.html">About Me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/musni-jonathan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/jemusni07" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://medium.com/@musni.jonathan7" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-							<li><a href="https://www.strava.com/athletes/117090563" class="icon brands fa-strava"><span class="label">Strava</span></a></li>
-						</ul>
-					</nav>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Building data solutions that drive impact</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>MS Information Systems & Continuous Learning</h3>
+                            <span class="timeline-company">Harrisburg University & Self-directed</span>
+                            <span class="timeline-date">2024 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Advanced studies and continuous learning in cutting-edge technologies:</p>
+                            <ul>
+                                <li>Pursuing MS in Information Systems and Engineering Management</li>
+                                <li>DataExpert Combined Track (Data and Analytics Engineering) - 2025</li>
+                                <li>Exploring Model Context Protocol, DSA, and LangGraph</li>
+                                <li>Sharing knowledge through technical blogs and GitHub projects</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Data Engineering</span>
+                            <span>AI Engineering</span>
+                            <span>System Architecture</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Engineer (Contractor)</h3>
+                            <span class="timeline-company">Comcast</span>
+                            <span class="timeline-date">2023 - 2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Contracted data engineering services for major telecommunications company:</p>
+                            <ul>
+                                <li>Built scalable data pipelines for analytics platforms</li>
+                                <li>Enhanced data observability and monitoring systems</li>
+                                <li>Implemented modern data engineering best practices</li>
+                                <li>Earned multiple certifications including AWS Data Engineer Associate</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Apache Spark</span>
+                            <span>AWS</span>
+                            <span>Databricks</span>
+                            <span>Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Engineer</h3>
+                            <span class="timeline-company">DXC Technology Platform X</span>
+                            <span class="timeline-date">2021 - 2023</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Transitioned to full-time data engineering with exceptional results:</p>
+                            <ul>
+                                <li><strong>96% latency improvement</strong> (2 minutes to 2 seconds) through dataset migration</li>
+                                <li><strong>63% AWS S3 storage cost reduction</strong> while maintaining data integrity</li>
+                                <li>Made Platform X Data Lake <strong>GDPR compliant</strong></li>
+                                <li>Graduated with MS Data Science from Drexel University (2021)</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Apache Spark</span>
+                            <span>AWS S3</span>
+                            <span>Data Lakes</span>
+                            <span>GDPR Compliance</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/jemusni07/RealtyLens"> RealtyLens
-									</a></h2>
-								</header>
-								<a href="https://github.com/jemusni07/RealtyLens" class="image main"><img src="images/realtylens_etl.png" alt="" /></a>
-								<p>RealtyLens is an application that provides analytic lens for daily rent and sale listings. This is my capstone submission for Zach Wilson's DataExpert Data Engineering bootcamp.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/jemusni07/RealtyLens" class="button large">GitHub</a></li>
-								</ul>
-							</article>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist (Part-time)</h3>
+                            <span class="timeline-company">DXC Technology AI Studio</span>
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Pioneered ML and AI applications while pursuing Master's degree:</p>
+                            <ul>
+                                <li>Built Machine Learning powered racing simulator</li>
+                                <li>Developed backend for AI-powered Virtual Reality application</li>
+                                <li>Pursued MS in Data Science at Drexel University (sponsored by DXC)</li>
+                                <li>Moved to Philadelphia, USA in 2019</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>VR/AR</span>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="https://medium.com/@musni.jonathan7/applying-with-confidence-93632558741a">Applying with Confidence!- Powered by LLM and AI Agents</a></h2>
-									</header>
-									<a href="https://medium.com/@musni.jonathan7/applying-with-confidence-93632558741a" class="image fit"><img src="images/multi_agentic.png" alt="" /></a>
-									<p>Generative AI has revolutionized job applications. With tools like ChatGPT, 
-										you can quickly create a resume tailored to a job posting. However, 
-										this has made it hard for recruiters to sift through thousands of AI-generated resumes. 
-										Often, resumes are so embellished that the first phone interview is a waste of time for both the applicant and recruiter. 
-										The goal of this project is to align your resume with the job posting honestly, 
-										without exaggerating your credentials.</p>
-									<ul class="actions special">
-										<li><a href="https://medium.com/@musni.jonathan7/applying-with-confidence-93632558741a" class="button">Medium</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 22, 2017</span> -->
-										<h2><a href="https://medium.com/towards-data-engineering/how-does-apache-iceberg-find-your-select-queries-7d4855811fff">How does Apache Iceberg find your select queries</a></h2>
-									</header>
-									<a href="https://medium.com/towards-data-engineering/how-does-apache-iceberg-find-your-select-queries-7d4855811fff" class="image fit"><img src="images/iceberg.png" alt="" /></a>
-									<p>If you ever had to look for data in a hive table,
-										 partition pruning can be painful. Forget one partition detail and you will end up with longer scans if not a full one. In this article we explore how iceberg looks for the file containing the data for a select query and how it compares to the old way of doing it in Hive</p>
-									<ul class="actions special">
-										<li><a href="https://medium.com/towards-data-engineering/how-does-apache-iceberg-find-your-select-queries-7d4855811fff" class="button">Medium</a></li>
-									</ul>
-								</article>
-								<!-- <article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article> -->
-								<!-- <article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article> -->
-							</section>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Electronics Engineer - Area Operations</h3>
+                            <span class="timeline-company">Sky Cable Operations</span>
+                            <span class="timeline-date">2016 - 2019</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Provided technical operations support for telecommunications infrastructure:</p>
+                            <ul>
+                                <li>Managed area operations for cable television and internet services</li>
+                                <li>Optimized network performance and system reliability</li>
+                                <li>Self-studied data science and Python during free time</li>
+                                <li>Brief training as Civil Aviation Authority officer candidate (2016)</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Network Operations</span>
+                            <span>Electronics Engineering</span>
+                            <span>System Optimization</span>
+                            <span>Self-study</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Footer -->
-							<!-- <footer>
-								<div class="pagination">
-									<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer> -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Biomedical Equipment Technician</h3>
+                            <span class="timeline-company">St. Luke's Medical Center</span>
+                            <span class="timeline-date">2015 - 2016</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Critical healthcare technology support in operating room theaters:</p>
+                            <ul>
+                                <li>Ensured reliability of medical equipment during surgeries</li>
+                                <li>Maintained precision and attention to detail in life-critical environments</li>
+                                <li>Passed Philippines Electronics Engineering Licensure Exam (2015)</li>
+                                <li>Graduated BS Electronics Engineering from Polytechnic University (2014)</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Medical Equipment</span>
+                            <span>Quality Control</span>
+                            <span>Electronics Engineering</span>
+                            <span>Critical Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world solutions with measurable impact</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://realtylens.streamlit.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Airflow</span>
+                            <span>Snowflake</span>
+                            <span>DBT</span>
+                            <span>Streamlit</span>
+                            <span>AWS S3</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>RealtyLens - Real Estate Analytics Platform</h3>
+                        <p>Comprehensive real estate analytics platform featuring daily ELT pipeline with Astronomer Airflow, 
+                           machine learning rent price predictions, and market lifecycle tracking. Data warehouse powered by S3 and Snowflake with spatial joins for zoning analysis.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-number">700K+</span>
+                                <span class="metric-label">Property Records</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">Daily</span>
+                                <span class="metric-label">Market Tracking</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://realtylens.streamlit.app/" class="btn btn-primary">Live App</a>
+                            <a href="https://github.com/jemusni07/RealtyLens" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">musni.jonathan7@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Connect With Me</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/musni-jonathan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/jemusni07" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://medium.com/@musni.jonathan7" class="icon brands fa-medium"><span class="label">Medium</span></a></li>		
-									<li><a href="https://www.strava.com/athletes/117090563" class="icon brands fa-strava"><span class="label">Strava</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://rfm-dashboard-q7ne.onrender.com/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Databricks</span>
+                            <span>Delta Live Tables</span>
+                            <span>K-means Clustering</span>
+                            <span>GitHub Actions</span>
+                            <span>Delta Lake</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Customer Analytics Pipeline</h3>
+                        <p>End-to-end data engineering pipeline with medallion architecture (Bronze/Silver/Gold layers). 
+                           Features automated K-means customer segmentation, RFM analysis, and comprehensive data quality monitoring.</p>
+                        <div class="project-links">
+                            <a href="https://dashboard.render.com/web/srv-d1pg2qjipnbc7380oa50" class="btn btn-primary">Live Dashboard</a>
+                            <a href="https://github.com/jemusni07/retail-pipeline" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://medium.com/@musni.jonathan7/applying-with-confidence-93632558741a" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>CrewAI</span>
+                            <span>GPT-4</span>
+                            <span>Multi-Agent Systems</span>
+                            <span>LangChain</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multi-Agent Job Application Helper</h3>
+                        <p>AI system using CrewAI multi-agent framework to ethically optimize job applications. 
+                           Features coordinated agents for resume analysis, job matching, and application enhancement while maintaining authenticity.</p>
+                        <div class="project-links">
+                            <a href="https://medium.com/@musni.jonathan7/applying-with-confidence-93632558741a" class="btn btn-primary">Read Article</a>
+                            <a href="https://github.com/jemusni07/job-application-helper" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
 
-			</div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jemusni07/agentic-chatbot" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>LangGraph</span>
+                            <span>PostgreSQL</span>
+                            <span>ChromaDB</span>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stateful Conversational AI Chatbot</h3>
+                        <p>Advanced chatbot with hierarchical context retrieval using LangGraph. 
+                           Features 3-tier memory architecture: last 5 conversations (PostgreSQL), vector search (ChromaDB), and LLM knowledge base.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/jemusni07/agentic-chatbot" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jemusni07/model-context-protocol" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>FastMCP</span>
+                            <span>AWS Glue</span>
+                            <span>Apache Iceberg</span>
+                            <span>Model Context Protocol</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Model Context Protocol Implementation</h3>
+                        <p>MCP client and server implementations featuring specialized Iceberg server for AWS Glue integration. 
+                           Supports database management, schema inspection, data querying, and snapshot history tracking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/jemusni07/model-context-protocol" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-	</body>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jemusni07/apache-iceberg-notes" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Docker</span>
+                            <span>Apache Spark</span>
+                            <span>MinIO</span>
+                            <span>GDPR Compliance</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Apache Iceberg Handbook</h3>
+                        <p>Comprehensive technical collection covering Copy-on-Write vs Merge-on-Read strategies, 
+                           GDPR compliance implementation, and interactive Jupyter notebooks with complete Docker environment setup.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/jemusni07/apache-iceberg-notes" class="btn btn-primary">Read Blogs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Modern data stack and cloud technologies</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Databricks</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PySpark</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-stream"></i>
+                        <h3>Data Processing</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Spark</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Snowflake</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kafka</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flink</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Trino</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Airflow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DBT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-warehouse"></i>
+                        <h3>Data Warehouse</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Snowflake</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Redshift</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DynamoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Data Lakehouse</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Delta Lake</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Iceberg</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">S3 Tables</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Engineering</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Model Context Protocol</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RAG Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vector Databases</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agentic AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3>Professional Certifications & Education</h3>
+                <div class="cert-grid">
+                    <a href="https://www.credly.com/badges/19a68c35-8f7d-4e69-ae9e-179c658379ce/public_url" class="cert-card" target="_blank">
+                        <i class="fab fa-aws"></i>
+                        <h4>AWS Certified</h4>
+                        <p>Data Engineer Associate (2024)</p>
+                    </a>
+                    <a href="https://credentials.databricks.com/602d3e00-d4f6-416f-8edb-99683d80781e#acc.TC2jkJEm" class="cert-card" target="_blank">
+                        <i class="fas fa-database"></i>
+                        <h4>Databricks Certified</h4>
+                        <p>Data Engineer Professional (2024)</p>
+                    </a>
+                    <a href="https://credentials.databricks.com/53d4fe27-7fdb-45ff-adaa-c8de119f5b39#acc.FkYJ63A1" class="cert-card" target="_blank">
+                        <i class="fas fa-robot"></i>
+                        <h4>Databricks Certified</h4>
+                        <p>Generative AI Engineer Associate (2024)</p>
+                    </a>
+                    <a href="https://learn.microsoft.com/en-us/users/jonathanmusni-7363/credentials/f2881e17df2a8670" class="cert-card" target="_blank">
+                        <i class="fab fa-microsoft"></i>
+                        <h4>Azure Certified</h4>
+                        <p>AI Engineer Associate (2024)</p>
+                    </a>
+                    <a href="https://learn.dataexpert.io/certification/jmusni07/combined-superb" class="cert-card" target="_blank">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>DataExpert</h4>
+                        <p>Combined Track Superb (2025)</p>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/CUXLERBZKQWV" class="cert-card" target="_blank">
+                        <i class="fas fa-brain"></i>
+                        <h4>DeepLearning.AI</h4>
+                        <p>Generative AI with LLMs (2024)</p>
+                    </a>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="color: #718096; font-size: 0.9rem;">
+                        <strong>Education:</strong> MS Data Science (Drexel University, 2021) • 
+                        MS Information Systems (Harrisburg University, In Progress) • 
+                        BS Electronics Engineering (Polytechnic University of the Philippines, 2014)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to discuss data engineering opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:musni.jonathan7@gmail.com">musni.jonathan7@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Philadelphia, PA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>Schedule a Meeting</h3>
+                            <a href="https://calendly.com/musni-jonathan7/30min" target="_blank">Book 30-min call</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/musni-jonathan/" class="social-link linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jemusni07" class="social-link github" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://medium.com/@musni.jonathan7" class="social-link medium" target="_blank">
+                        <i class="fab fa-medium"></i>
+                        <span>Medium</span>
+                    </a>
+                    <a href="https://www.strava.com/athletes/117090563" class="social-link strava" target="_blank">
+                        <i class="fab fa-strava"></i>
+                        <span>Strava</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Jonathan Musni. Built with passion for data engineering excellence.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
